@@ -1,0 +1,6 @@
+procedure:
+  name: Simple Test
+  version: 1.0.0
+
+phases:
+  - name: Native Phase
