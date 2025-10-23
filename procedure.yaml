@@ -4,3 +4,16 @@ procedure:
 
 phases:
   - name: Native Phase
+
+  - name: Measure Value
+    measurements:
+      - name: voltage
+        unit: V
+    ui:
+      instructions: Enter the measured voltage
+      components:
+        - type: number-input
+          id: voltage_input
+          label: Voltage
+          bind: voltage
+          required: true
