@@ -3,6 +3,8 @@ procedure:
   version: 1.0.0
 
 phases:
+  - name: Atomic phase
+
   - name: Measure Value
     measurements:
       - name: voltage
