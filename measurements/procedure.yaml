@@ -24,7 +24,7 @@ main:
       - measure_voltage
     measurements:
       - name: Ambient Temperature
-        unit: °C
+        unit: celsius
         validators:
           - operator: ">="
             expected_value: 20.0
