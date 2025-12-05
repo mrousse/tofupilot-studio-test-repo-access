@@ -1,0 +1,20 @@
+name: Boilerplate
+version: 1.0.0
+description: Boilerplate test procedure with Python phase
+
+execution:
+  strategy: phase_first
+  workers: 2
+  on_first_failure: stop
+  slots:
+    - key: slot_a
+      name: SLOT_A
+
+plugs:
+  - name: FailingPlug
+    scope: all
+    python: plugs.counter:FailingPlug
+
+main:
+  - name: Should Not Run
+    python: phases.run_test:should_not_run
