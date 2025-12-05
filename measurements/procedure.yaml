@@ -30,3 +30,8 @@ main:
             expected_value: 20.0
           - operator: "<="
             expected_value: 30.0
+      - name: Outside Temperature
+        unit: celsius
+        validators:
+          - operator: "<="
+            expected_value: 20.0
