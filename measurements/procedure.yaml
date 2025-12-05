@@ -24,23 +24,9 @@ main:
       - measure_voltage
     measurements:
       - name: Ambient Temperature
-        unit: Â°C
+        unit: °C
         validators:
           - operator: ">="
             expected_value: 20.0
           - operator: "<="
-            expected_value: 30.0
-  - key: measure_temperature
-    name: Measure Temperature
-    python: phases.measure_temperature
-    description: Measure temperature and validate range
-    depends_on:
-      - measure_voltage
-    measurements:
-      - name: Ambient Temperature
-        unit: Â°C
-        validators:
-          - operator: "<="
-            expected_value: 20.0
-          - operator: ">="
             expected_value: 30.0
